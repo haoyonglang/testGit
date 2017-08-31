@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context=".activity.HousListActivity">
+
+    <include
+        android:id="@+id/house_list_top"
+        layout="@layout/top"/>
+
+    <com.lang.zheren.test.ExpandTabView
+        android:id="@+id/expandtabTab"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@+id/house_list_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/list_line"/>
+
+        <ListView
+            android:id="@+id/house_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="#00000000">
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

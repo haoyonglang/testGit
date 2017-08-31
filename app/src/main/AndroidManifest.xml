@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.lang.zheren">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".activity.GuideActivity"/>
+        <activity android:name=".activity.TestLoginActivity"/>
+        <activity android:name=".activity.HomeActivity"/>
+        <activity android:name=".activity.TestRegisterActivity"/>
+        <activity android:name=".activity.Resetpwd"/>
+        <activity android:name=".activity.User"/>
+        <activity android:name=".activity.test"/>
+        <!--<activity android:name=".SplashActivity"/>-->
+        <activity android:name=".activity.DialogActivity"/>
+        <activity android:name=".activity.ScrollViewActivity"/>
+        <activity
+            android:name=".activity.HousListActivity"
+            android:exported="true"/>
+        <activity android:name=".activity.HouseDetailActivity"/>
+        <activity
+            android:name=".activity.BuyHouseActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".test.MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".dropmenu.MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".filter.activity.MainActivity"
+            android:exported="true"/>
+        <activity android:name=".activity.LoginActivity"/>
+        <activity android:name=".activity.RegisterActivity"/>
+    </application>
+</manifest>

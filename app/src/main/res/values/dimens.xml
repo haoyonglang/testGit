@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="left">10dp</dimen>
+    <dimen name="right">10dp</dimen>
+    <dimen name="popupWindow_height">40dp</dimen>
+    <dimen name="popupWindow_left">6dp</dimen>
+
+    <dimen name="top_title_size">25sp</dimen>
+    <dimen name="popupWindow_size">22sp</dimen>
+
+    <dimen name="item_house_left">20sp</dimen>
+
+    <!--item house-->
+    <dimen name="item_house_price">20sp</dimen>
+
+    <!--文字的大小-->
+    <dimen name="text_small">15sp</dimen>
+    <dimen name="text_middle">20sp</dimen>
+    <dimen name="text_big">25sp</dimen>
+
+    <!--边距-->
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_middle">20dp</dimen>
+    <dimen name="margin_big">30dp</dimen>
+    <dimen name="margin_left">10dp</dimen>
+    <dimen name="margin_right">10dp</dimen>
+    <dimen name="margin_top">10dp</dimen>
+    <dimen name="margin_bottom">10dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="padding_left">10dp</dimen>
+    <dimen name="padding_right">10dp</dimen>
+    <dimen name="padding_top">10dp</dimen>
+    <dimen name="padding_bottom">10dp</dimen>
+
+    <!--button按钮大小-->
+    <dimen name="btn_big_width">80dp</dimen>
+    <dimen name="btn_big_high">60dp</dimen>
+    <dimen name="btn_middle_width">60dp</dimen>
+    <dimen name="btn_middle_high">40dp</dimen>
+    <dimen name="btn_small_width">40dp</dimen>
+    <dimen name="btn_small_high">30dp</dimen>
+
+    <!--线的宽高-->
+    <dimen name="line_small_width">1dp</dimen>
+    <dimen name="line_middle_width">2dp</dimen>
+    <dimen name="line_small_high">20dp</dimen>
+    <dimen name="line_middle_high">30dp</dimen>
+    <dimen name="line_divider_high">1dp</dimen>
+
+    <!--控件的高-->
+    <dimen name="small_high">40dp</dimen>
+    <dimen name="middle_high">50dp</dimen>
+    <dimen name="big_high">60dp</dimen>
+    <dimen name="list_item_high">60dp</dimen>
+
+    <!--编辑框尺寸-->
+    <dimen name="edt_small_high">40dp</dimen>
+    <dimen name="edt_middle_high">50dp</dimen>
+    <dimen name="edt_big_high">60dp</dimen>
+    <dimen name="edt_middle_width">160dp</dimen>
+
+    <!--下拉菜单-->
+    <dimen name="TitleBarHeight">53.0dp</dimen>
+    <dimen name="LargeTextSize">16.0dip</dimen>
+    <dimen name="main_tab_bar">49dip</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+
+    <!-- app (item多项，内容字体大小(appTextSizeNormal),标题字体大小(appTextSizeFourteen))-->
+    <dimen name="appTextSizeNormal">12sp</dimen>
+    <dimen name="appTextSizeThirteen">13sp</dimen>
+    <dimen name="appTextSizeFourteen">14sp</dimen>
+    <dimen name="appTextSizeFifteen">15sp</dimen>
+    <dimen name="app_cus_popuwindow_item_h">43dp</dimen>
+
+    <!--自I定义图形形状-->
+    <dimen name="radius_text_small">5dp</dimen>
+    <dimen name="radius_text_middle">10dp</dimen>
+    <dimen name="radius_text_big">15dp</dimen>
+
+</resources>

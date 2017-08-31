@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ivUpOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@color/transparent" />
+
+        <ImageView
+            android:id="@+id/ivUpTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@color/transparent" />
+
+        <ImageView
+            android:id="@+id/ivUpThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@color/transparent" />
+
+        <ImageView
+            android:id="@+id/ivUpFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_popuwindow_up" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyIndex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlHouseType"
+            style="@style/moreItem" >
+
+            <TextView
+                style="@style/moreItemLeftText"
+                android:text="居室" />
+
+            <TextView
+                android:id="@+id/tvHouseType"
+                style="@style/moreItemRight"
+                android:layout_toLeftOf="@+id/ivArrowOne"
+                android:text="一居" />
+
+            <ImageView
+                android:id="@+id/ivArrowOne"
+                style="@style/moreItemarrow" />
+
+            <View
+                style="@style/horizontal_line"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlPrice"
+            style="@style/moreItem" >
+
+            <TextView
+                style="@style/moreItemLeftText"
+                android:text="价格" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                style="@style/moreItemRight"
+                android:layout_toLeftOf="@+id/ivArrowTwo"
+                android:text="10000-15000" />
+
+            <ImageView
+                android:id="@+id/ivArrowTwo"
+                style="@style/moreItemarrow" />
+
+            <View
+                style="@style/horizontal_line"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlWeb"
+            style="@style/moreItem" >
+
+            <TextView
+                style="@style/moreItemLeftText"
+                android:text="网站" />
+
+            <TextView
+                android:id="@+id/tvWeb"
+                style="@style/moreItemRight"
+                android:layout_toLeftOf="@+id/ivArrowThree"
+                android:text="赶集网" />
+
+            <ImageView
+                android:id="@+id/ivArrowThree"
+                style="@style/moreItemarrow" />
+
+            <View
+                style="@style/horizontal_line"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvFilter"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/app_btn_blue"
+            android:gravity="center"
+            android:text="筛选"
+            android:textColor="@color/white"
+            android:textSize="@dimen/appTextSizeFifteen" />
+           
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/lySelectHouseType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" 
+        android:visibility="gone">
+         <include 
+            layout="@layout/view_more_popuwindow_house_type"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/lySetPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" 
+        android:visibility="gone">
+         <include 
+            layout="@layout/view_more_popuwindow_price"/>
+    </LinearLayout>
+
+</LinearLayout>

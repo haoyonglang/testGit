@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/top"></include>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rel_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所在地区"
+                    android:textSize="20sp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/select_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:textSize="20sp"
+                        android:visibility="gone"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/buy_select_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@mipmap/right"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/buy_select_area"
+                            android:text="请选择"
+                            android:textColor="@color/buy_select"
+                            android:textSize="20sp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_select_area"
+                    android:visibility="visible"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ListView
+                        android:id="@+id/lst_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:scrollbars="none">
+
+                    </ListView>
+
+                    <ListView
+                        android:id="@+id/lst_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:scrollbars="none">
+
+                    </ListView>
+
+                    <ListView
+                        android:id="@+id/lst_street"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:scrollbars="none">
+
+                    </ListView>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_select_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_middle_high"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:background="@drawable/btn_red_radius"
+                    android:text="@string/sell_sure"
+                    android:textColor="@color/text_white"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_community"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/community_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/rel_community_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/buy_select_community"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/right"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/buy_select_community"
+                        android:text="@string/sell_community_select"
+                        android:textColor="@color/buy_select"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_community"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <ListView
+                    android:id="@+id/lst_community"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scrollbars="none">
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/btn_select_community"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_middle_high"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:background="@drawable/btn_red_radius"
+                    android:text="@string/sell_sure"
+                    android:textColor="@color/text_white"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_space"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/space"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/sell_space_unit"
+                    android:textColor="@color/buy_select"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/edt_area_value"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/space"
+                    android:background="@drawable/bg_edit_text"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/edt_area_value"
+                    android:text="@string/sell_space_all_input"
+                    android:textColor="@color/buy_select"
+                    android:textSize="20sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_total_price"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/price_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/house_wan"
+                    android:textColor="@color/buy_select"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/edt_price_all"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/price_total"
+                    android:background="@drawable/bg_edit_text"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/edt_price_all"
+                    android:text="@string/sell_total_price"
+                    android:textColor="@color/buy_select"
+                    android:textSize="20sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_title"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/edt_title"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:gravity="center"
+                    android:hint="@string/sell_title_input"
+                    android:singleLine="true"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_house_type"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/huxing_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/rel_huxing_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/buy_house_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/right"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/buy_house_type"
+                        android:text="@string/sell_house_type_select"
+                        android:textColor="@color/buy_select"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_huxing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ListView
+                    android:id="@+id/lst_huxing"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scrollbars="none">
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/btn_select_huxing"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_middle_high"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:background="@drawable/btn_red_radius"
+                    android:text="@string/sell_sure"
+                    android:textColor="@color/text_white"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_zhu_zhai"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/zhuzhai_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/rel_zhuzhai_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/buy_zhuzhai_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/right"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/buy_zhuzhai_type"
+                        android:text="@string/sell_zhu_zhai_select"
+                        android:textColor="@color/buy_select"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_zhuzhai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ListView
+                    android:id="@+id/lst_zhuzhai"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scrollbars="none">
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/btn_select_zhuzhai"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_middle_high"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:background="@drawable/btn_red_radius"
+                    android:text="@string/sell_sure"
+                    android:textColor="@color/text_white"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_type"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/zhuangxiu_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/rel_zhuangxiu_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/buy_zhuangxiu_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/right"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/buy_zhuangxiu_type"
+                        android:text="@string/sell_type_select"
+                        android:textColor="@color/buy_select"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_zhuangxiu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <ListView
+                    android:id="@+id/lst_zhuangxiu"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scrollbars="none">
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/btn_select_zhuangxiu"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_middle_high"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:background="@drawable/btn_red_radius"
+                    android:text="@string/sell_sure"
+                    android:textColor="@color/text_white"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_orientation"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/orientation_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/rel_orientation_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/buy_orientation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/right"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/buy_orientation"
+                        android:text="@string/sell_orientation_select"
+                        android:textColor="@color/buy_select"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_orientation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <ListView
+                    android:id="@+id/lst_orientation"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scrollbars="none">
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/btn_select_orientation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_middle_high"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:background="@drawable/btn_red_radius"
+                    android:text="@string/sell_sure"
+                    android:textColor="@color/text_white"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_property"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/property_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/rel_property_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/buy_select_property"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/right"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/buy_select_property"
+                        android:text="@string/sell_property_select"
+                        android:textColor="@color/buy_select"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_property"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <ListView
+                    android:id="@+id/lst_property"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scrollbars="none">
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/btn_select_property"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_middle_high"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:background="@drawable/btn_red_radius"
+                    android:text="@string/sell_sure"
+                    android:textColor="@color/text_white"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_time"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/time_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/rel_time_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/buy_select_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/right"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/buy_select_time"
+                        android:text="@string/sell_time_select"
+                        android:textColor="@color/buy_select"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <ListView
+                    android:id="@+id/lst_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scrollbars="none">
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/btn_select_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_middle_high"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:background="@drawable/btn_red_radius"
+                    android:text="@string/sell_sure"
+                    android:textColor="@color/text_white"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_floor"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/floor_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/rel_floor_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/buy_select_floor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/right"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/buy_select_floor"
+                        android:text="@string/sell_floor_select"
+                        android:textColor="@color/buy_select"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_floor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ListView
+                    android:id="@+id/lst_floor"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scrollbars="none">
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/btn_select_floor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_middle_high"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:background="@drawable/btn_red_radius"
+                    android:text="@string/sell_sure"
+                    android:textColor="@color/text_white"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/item_bg_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_deal"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/deal_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/rel_deal_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/buy_select_deal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/right"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/buy_select_deal"
+                        android:text="@string/sell_deal_select"
+                        android:textColor="@color/buy_select"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_deal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ListView
+                    android:id="@+id/lst_deal"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scrollbars="none">
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/btn_select_deal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_middle_high"
+                    android:layout_marginLeft="@dimen/margin_left"
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:background="@drawable/btn_red_radius"
+                    android:text="@string/sell_sure"
+                    android:textColor="@color/text_white"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_11"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/item_bg_color"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/txt_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/sell_describe"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/edt_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/txt_des"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_edit_text"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/txt_house_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/sell_img_house"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/sell_img_house_tip"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@id/txt_house_img"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/item_bg_color">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/border">
+
+                        <LinearLayout
+                            android:id="@+id/layout_add_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/img_buy_add"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@mipmap/add_img"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="140*140"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buy_publish"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/bg_button"
+                android:text="@string/sell_publish"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,130 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">哲仁科技</string>
+
+    <string name="hint_operator_name">你好</string>
+    <string name="hello">Hello World, Date!</string>
+    <string name="strInputAccHint">输入帐号</string>
+    <string name="strAccInputLabel">帐号</string>
+    <string name="strPswInputLabel">密码</string>
+    <string name="login">登 录</string>
+    <string name="register">注 册</string>
+    <string name="cancel">取 消</string>
+    <string name="reset_psw">重置密码</string>
+    <string name="account_empty">用户名为空，请重新输入！</string>
+    <string name="pwd_empty">密码为空，请重新输入！</string>
+    <string name="pwd_not_fit_user">密码不正确，请重新输入！</string>
+    <string name="pwd_new_empty">新密码为空，请重新输入！</string>
+    <string name="pwd_check_empty">密码确认为空，请重新输入！</string>
+    <string name="pwd_not_the_same">密码确认不正确，请重新输入密码！</string>
+    <string name="register_fail">注册用户失败，请重新尝试！</string>
+    <string name="register_success">注册成功！</string>
+    <string name="resetpwd_fail">密码修改失败，请重新尝试！</string>
+    <string name="resetpwd_success">密码修改成功！</string>
+    <string name="login_success">登陆成功！</string>
+    <string name="cancel_success">注销成功！</string>
+    <string name="login_fail">登录失败！请输入正确的用户名与密码！</string>
+    <string name="cancel_fail">注销失败！请输入正确的用户名与密码！</string>
+    <string name="name_already_exist">用户名【<xliff:g example="tom" id="id1">%1$s</xliff:g>】已存在，请重新输入！</string>
+    <string name="name_not_exist">用户名【<xliff:g example="tom" id="id1">%1$s</xliff:g>】不存在，请重新输入！</string>
+    <string name="user_login_success">用户：<xliff:g example="tom" id="id2">%1$s</xliff:g>登录，欢迎光临！</string>
+
+    <!--底部菜单栏-->
+    <string name="home">首页</string>
+    <string name="search">发现</string>
+    <string name="my">我的</string>
+    <string name="other">其他</string>
+
+    <!--顶部-->
+    <string name="top_house_list">房源列表</string>
+    <string name="top_house_detail">房源详情</string>
+    <string name="top_house_buy">我要卖房</string>
+
+    <!--登录和注册-->
+    <string name="login_top_title">登录</string>
+    <string name="login_top_register">注册</string>
+    <string name="hint_user_name">请输入您的手机号/邮箱/账户</string>
+    <string name="hint_password_login">请输入您的密码</string>
+    <string name="register_now">立即注册</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="phone_num">手机号</string>
+    <string name="verify_code">验证码</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="hint_password_register">请输入密码</string>
+    <string name="agreement">我已阅读并同意相关协议</string>
+    <string name="account_exist">已有账号，请登录</string>
+
+    <!--房源列表-->
+    <string name="pop_total">位置</string>
+    <string name="pop_area">房型</string>
+    <string name="pop_price">价格</string>
+    <string name="pop_floor">筛选</string>
+    <string name="house_custom">自定义</string>
+    <string name="house_room">室</string>
+    <string name="house_office">厅</string>
+    <string name="house_toilet">卫</string>
+    <string name="house_finish">完成</string>
+    <string name="house_reset">重置</string>
+    <string name="house_lowest_price">最低价</string>
+    <string name="house_highest_price">最高价</string>
+    <string name="house_wan">万</string>
+    <string name="house_area">面积（平米）</string>
+    <string name="house_time">房龄</string>
+    <string name="house_floor">楼层</string>
+    <string name="house_property">产权</string>
+    <string name="house_sort">排序</string>
+    <string name="house_num">张</string>
+
+    <!--房源详情-->
+    <string name="detail_base_info">基本信息</string>
+    <string name="detail_info">详细信息</string>
+    <string name="detail_charge">费用</string>
+    <string name="detail_community_info">小区信息</string>
+    <string name="detail_map">地图</string>
+
+    <!--我要卖房-->
+    <string name="sell_area">所在地区</string>
+    <string name="sell_area_select">请选择</string>
+    <string name="sell_community">您的小区</string>
+    <string name="sell_community_select">请输入（西安）小区</string>
+    <string name="sell_space">面积</string>
+    <string name="sell_space_all_input">房屋总面积</string>
+    <string name="sell_space_unit">㎡</string>
+    <string name="sell_total_price">总价</string>
+    <string name="sell_price_unit">万</string>
+    <string name="sell_title">标题</string>
+    <string name="sell_title_input">请输入标题</string>
+    <string name="sell_house_type">户型</string>
+    <string name="sell_house_type_select">请选择您的户型</string>
+    <string name="sell_zhu_zhai">住宅类型</string>
+    <string name="sell_zhu_zhai_select">请选择您的住宅类型</string>
+    <string name="sell_type">装修类型</string>
+    <string name="sell_type_select">请选择您的装修类型</string>
+    <string name="sell_orientation">房屋朝向</string>
+    <string name="sell_orientation_select">请选择朝向</string>
+    <string name="sell_property">产权</string>
+    <string name="sell_property_select">请输入产权年限及类型</string>
+    <string name="sell_time">建筑年代</string>
+    <string name="sell_time_select">请输入房屋建筑年代</string>
+    <string name="sell_floor">楼层</string>
+    <string name="sell_floor_select">所在楼层及共几层</string>
+    <string name="sell_deal">交易权属</string>
+    <string name="sell_deal_select">权属类型</string>
+    <string name="sell_describe">个性描述</string>
+    <string name="sell_img_house">房源图</string>
+    <string name="sell_img_house_tip">上传图片 吸引更多买家  （必填）</string>
+    <string name="sell_publish">发布</string>
+    <string name="sell_sure">确定</string>
+    <string name="sell_select_area">请选择地区：</string>
+
+    <!--下拉菜单-->
+    <string name="area">位置</string>
+    <string name="type">房型</string>
+    <string name="price">价格</string>
+    <string name="filter">筛选</string>
+
+    <string name="auto_refresh">自动刷新：</string>
+    <string name="cloud_collect">云采集</string>
+    <string name="no_data">没有找到符合条件的房源</string>
+
+</resources>

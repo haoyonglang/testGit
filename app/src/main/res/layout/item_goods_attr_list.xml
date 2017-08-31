@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ffffff"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/attr_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <com.lang.zheren.filter.view.NoScrollGridview
+        android:id="@+id/attr_list_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:horizontalSpacing="14dp"
+        android:numColumns="4"
+        android:verticalSpacing="14dp"/>
+
+    <com.lang.zheren.filter.view.NoScrollGridview
+        android:id="@+id/attr_list_grid2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:horizontalSpacing="14dp"
+        android:numColumns="4"
+        android:verticalSpacing="14dp"
+        android:visibility="gone"/>
+
+</LinearLayout>
